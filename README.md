@@ -1,5 +1,6 @@
 # dPickleBallEnv
-dPickleBallEnv for RL
+
+Steps to Setup dPickleball Environment:
 
 1) conda create -n dpickleball python=3.10.12 && conda activate dpickleball
 2) git clone https://github.com/dPickleball/dpickleball-ml-agents.git
