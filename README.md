@@ -7,3 +7,4 @@ dPickleBallEnv for RL
 4) pip install ./ml-agents-envs
 5) pip install ./ml-agents
 6) install matplotlib and open-cv
+7) python test_paral.py
