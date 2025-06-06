@@ -6,3 +6,4 @@ dPickleBallEnv for RL
 3) cd ml-agents-dpickleball
 4) pip install ./ml-agents-envs
 5) pip install ./ml-agents
+6) install matplotlib and open-cv
