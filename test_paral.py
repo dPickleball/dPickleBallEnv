@@ -2,13 +2,16 @@ from mlagents_envs.environment import UnityEnvironment
 from mlagents_envs.envs.unity_parallel_env import UnityParallelEnv
 import matplotlib.pyplot as plt
 import sys
+
 import cv2
-import math
-import numpy as np
+
 from mlagents_envs.envs.custom_side_channel import CustomDataChannel
 
 channel = CustomDataChannel()
-channel.send_data(serve=1, p1=0, p2=0)
+reward_cum = [0,0]
+channel.send_data(serve=23, p1=reward_cum[0], p2=reward_cum[1])
+
+
 
 print("Hello dPickleBall Trainer")
 
@@ -18,6 +21,10 @@ env = UnityParallelEnv(unity_env)
 print("petting zoo setup")
 env.reset()
 print("ready to go!")
+
+
+import math
+import numpy as np
 
 # Define square directions
 square_directions = [
@@ -32,7 +39,7 @@ step = 0
 # print available agents
 print("Agent Names", env.agents)
 
-reward_cum = [0,0]
+
 
 while env.agents:
 
@@ -48,7 +55,10 @@ while env.agents:
     reward_cum[0] += reward['PAgent1?team=0?agent_id=0']
     reward_cum[1] += reward['PAgent2?team=0?agent_id=1']
 
-    # print("reward:", reward_cum)
+    print("reward:", reward_cum, done)
+
+    if done['PAgent1?team=0?agent_id=0'] or done['PAgent2?team=0?agent_id=1']:
+        sys.exit()
 
     obs = observation['PAgent1?team=0?agent_id=0']['observation'][0]
 
