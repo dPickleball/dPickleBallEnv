@@ -10,7 +10,8 @@ Installation Steps to Setup dPickleball Environment:
 6) pip install -e ./ml-agents
 7) pip install matplotlib
 8) pip install opencv-python
-9) python test_paral.py
+9) Download this repo, modify path in test_paral.py
+10) python test_paral.py
 
 Usage:
 1) conda activate dpickleball
