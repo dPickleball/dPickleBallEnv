@@ -2,20 +2,16 @@ from mlagents_envs.environment import UnityEnvironment
 from mlagents_envs.envs.unity_parallel_env import UnityParallelEnv
 import matplotlib.pyplot as plt
 import sys
-
 import cv2
-
 from mlagents_envs.envs.custom_side_channel import CustomDataChannel
 
 channel = CustomDataChannel()
 reward_cum = [0,0]
-channel.send_data(serve=23, p1=reward_cum[0], p2=reward_cum[1])
-
-
+channel.send_data(serve=212, p1=reward_cum[0], p2=reward_cum[1])
 
 print("Hello dPickleBall Trainer")
 
-unity_env = UnityEnvironment(None, side_channels=[channel])
+unity_env = UnityEnvironment(r"C:\Users\User\Desktop\build\dPickleball.exe", side_channels=[channel])
 print("environment created")
 env = UnityParallelEnv(unity_env)
 print("petting zoo setup")
@@ -39,10 +35,7 @@ step = 0
 # print available agents
 print("Agent Names", env.agents)
 
-
-
 while env.agents:
-
     side = (step // steps_per_side) % 4
     action = square_directions[side]
 
@@ -63,24 +56,17 @@ while env.agents:
     obs = observation['PAgent1?team=0?agent_id=0']['observation'][0]
 
     #print(obs.shape)
-
-
+    
     img = np.transpose(obs, (1, 2, 0))  # now shape is (84, 168, 3)
-
     # Convert to uint8 and RGB to BGR for OpenCV
     img_uint8 = cv2.cvtColor((img * 255).astype(np.uint8), cv2.COLOR_RGB2BGR)
-
-
     cv2.imshow('Camera', img_uint8)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         print("Quitting display")
         break
     
-
     # print(f"Step {step}: action = {action}")
-
-
 
     step += 1
 
