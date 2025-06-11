@@ -1,4 +1,4 @@
-# dPickleBallEnv
+# dPickleBallEnv [https://dpickleball.github.io/](https://dpickleball.github.io/)
 
 Installation Steps to Setup dPickleball Environment:
 
@@ -17,3 +17,5 @@ Usage:
 1) conda activate dpickleball
 2) python test_paral.py
 3) Play at Unity
+
+Developed with love and heart by dPickleball Technical Team
