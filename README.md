@@ -1,5 +1,8 @@
 # dPickleBallEnv [https://dpickleball.github.io/](https://dpickleball.github.io/)
 
+![image](poster.png)
+
+
 Installation Steps to Set Up dPickleball Environment:
 
 1) conda create -n dpickleball python=3.10.12
