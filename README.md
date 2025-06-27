@@ -1,4 +1,4 @@
-# dPickleBall Environment (Website: [https://dpickleball.github.io/](https://dpickleball.github.io/))
+# dPickleBall Environment ([https://dpickleball.github.io/](https://dpickleball.github.io/))
 
 ![dPickleBall Competition Logo](Logo.png)
 
