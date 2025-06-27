@@ -1,7 +1,5 @@
 # dPickleBallEnv [https://dpickleball.github.io/](https://dpickleball.github.io/)
 
-Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdwzjgP88rJtZO4qPkyfAGSS7e?usp=sharing](https://drive.google.com/drive/folders/1LiFp2MJdwzjgP88rJtZO4qPkyfAGSS7e?usp=sharing)
-
 Installation Steps to Set Up dPickleball Environment:
 
 1) conda create -n dpickleball python=3.10.12
@@ -14,9 +12,12 @@ Installation Steps to Set Up dPickleball Environment:
 8) pip install opencv-python
 9) Download this repo, modify the path in test_paral.py
 
+Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdwzjgP88rJtZO4qPkyfAGSS7e?usp=sharing](https://drive.google.com/drive/folders/1LiFp2MJdwzjgP88rJtZO4qPkyfAGSS7e?usp=sharing)
+
 Usage:
-1) conda activate dpickleball
-2) python test_paral.py
-3) Play at Unity
+1) Download the build from the URL above
+2) conda activate dpickleball
+3) python test_paral.py
+4) Play at Unity
 
 Developed with love and heart by the dPickleball Technical Team
