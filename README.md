@@ -1,4 +1,6 @@
-# dPickleBallEnv [https://dpickleball.github.io/](https://dpickleball.github.io/)
+# dPickleBall Environment (Official Website: [https://dpickleball.github.io/](https://dpickleball.github.io/))
+
+![dPickleBall Competition Logo](Logo.png)
 
 # Installation Steps to Set Up dPickleball Environment:
 
