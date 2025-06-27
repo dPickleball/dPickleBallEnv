@@ -17,7 +17,7 @@ Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdw
 Usage:
 1) Download the build from the URL above
 2) conda activate dpickleball
-3) python test_paral.py
+3) python test_paral.py (**remember to change path**)
 4) Play at Unity
 
 Developed with love and heart by the dPickleball Technical Team
