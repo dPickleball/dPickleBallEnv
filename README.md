@@ -1,6 +1,6 @@
 # dPickleBall Environment ([https://dpickleball.github.io/](https://dpickleball.github.io/))
 
-![dPickleBall Competition Logo](Logo.png)
+![dPickleBall Competition Logo](Images/Logo.png)
 
 # Installation Steps to Set Up dPickleball Environment:
 
@@ -34,4 +34,4 @@ Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdw
 
 # Developed with love and heart by the dPickleball Technical Team
 
-![image](poster.png)
+![image](Images/poster.png)
