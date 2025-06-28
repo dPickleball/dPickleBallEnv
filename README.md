@@ -22,6 +22,9 @@ Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdw
 4) The environment will be launched
 
 # Rules:
+
+![Court](Images/Court.png)
+
 1) Agents can move freely within their own half of the court. Paddles can rotate to control the ball’s rebound angle and direction, allowing for angled shots, spin, and advanced control.
 2) Your agent takes real-time visual observation of the environment as input and outputs actions. The action space consists of three discrete components, each with three possible values: (0: none, 1: up, 2: down), (0: none, 1: right, 2: left), and (0: none, 1: counter-clockwise, 2: clockwise).
 3) The objective is to hit the ball to the opponent’s side of the court. One point is awarded if the opponent fails to return the ball. The first player to reach 21 points wins the match.
@@ -31,7 +34,6 @@ Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdw
 7) There are solid walls on the left and right sides of the court, and the ball will rebound off these walls during play.
 8) A maximum response time of 0.1 seconds is expected from the agent; if no action is received within this time window, no action will be executed for that step.
 
-
 # Developed with love and heart by the dPickleball Technical Team
 
-![image](Images/poster.png)
+![poster](Images/poster.png)
