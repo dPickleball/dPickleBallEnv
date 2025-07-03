@@ -20,7 +20,7 @@ Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdw
 2) conda activate dpickleball
 3) python test_paral.py    **(remember to change path and point to the build)**
 4) The environment will be launched and shown. **(Ctrl + C to exit)**
-5) python sb3_train_example **(To train the right agent using SB3)**
+5) python sb3_train_example.py **(To train the right agent using SB3)**
 
 # Rules:
 
