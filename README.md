@@ -27,12 +27,53 @@ Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdw
 
 1) Agents can move freely within their own half of the court. Paddles can rotate to control the ball’s rebound angle and direction, allowing for angled shots, spin, and advanced control.
 2) Your agent takes real-time visual observation of the environment as input and outputs actions. The action space consists of three discrete components, each with three possible values: (0: none, 1: up, 2: down), (0: none, 1: right, 2: left), and (0: none, 1: counter-clockwise, 2: clockwise).
-3) The objective is to hit the ball to the opponent’s side of the court. One point is awarded if the opponent fails to return the ball. The first player to reach 21 points wins the match.
-4) The winner of the previous point serves the next ball. At the beginning of the match, the right-side player serves first.
-5) If the ball becomes stuck in the center of the court due to simultaneous contact by both players, it is considered a held ball. In such cases, the ball will be relocated to the server’s side.
-6) If the ball remains on one side of the court for more than 5 seconds without crossing over, the opposing player is awarded a point.
-7) There are solid walls on the left and right sides of the court, and the ball will rebound off these walls during play.
-8) A maximum response time of 0.1 seconds is expected from the agent; if no action is received within this time window, no action will be executed for that step.
+3) Your Python solution is expected to be the following form in your own Python .py file.
+```python
+# Build a Python class for your solution, do preprocessing (image processing, frame stacking, etc) here.
+# During competition, only the policy function is called at each time step, providing the observation and reward for that time step only.
+# Your agent is expected to return actions to be executed.
+class TeamX:
+    def __init__(self):
+        ...
+    
+    # Your policy takes only visual representation as input, 
+    # and reward is 1 when you score, -1 when your opponent scores
+    # Your policy function returns actions
+    def policy(self, observation, reward):
+        # Implement your solution here
+        return action
+
+```
+During the competition, your policy function will be called before env.step()
+```python
+
+...
+observation = env.reset()
+reward_left = reward_right = 0
+teamX = TeamX()
+teamY = TeamY()
+...
+
+while ...:
+    # Call policy before env.step()
+    actions = {
+        'agent_left_id': teamX.policy(observation, reward_left),
+        'agent_right_id': teamY.policy(observation, reward_right)
+    }
+
+    # Then step the environment
+    observation, rewards, dones, infos = env.step(actions)
+    reward_left = rewards['agent_left_id']
+    reward_right = rewards['agent_right_id']
+
+```
+
+4) The objective is to hit the ball to the opponent’s side of the court. One point is awarded if the opponent fails to return the ball. The first player to reach 21 points wins the match.
+5) The winner of the previous point serves the next ball. At the beginning of the match, the right-side player serves first.
+6) If the ball becomes stuck in the center of the court due to simultaneous contact by both players, it is considered a held ball. In such cases, the ball will be relocated to the server’s side.
+7) If the ball remains on one side of the court for more than 5 seconds without crossing over, the opposing player is awarded a point.
+8) There are solid walls on the left and right sides of the court, and the ball will rebound off these walls during play.
+9) A maximum response time of 0.1 seconds is expected from the agent; if no action is received within this time window, no action will be executed for that step.
 
 # Developed with love and heart by the dPickleball Technical Team
 
