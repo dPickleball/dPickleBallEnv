@@ -74,7 +74,7 @@ while ...:
 7) If the ball remains on one side of the court for more than 5 seconds without crossing over, the opposing player is awarded a point.
 8) There are solid walls on the left and right sides of the court, and the ball will rebound off these walls during play.
 9) A maximum response time of 0.1 seconds is expected from the agent; if no action is received within this time window, no action will be executed for that step.
-10) You are allowed to use different checkpoints for left and right paddles.
+10) Please make sure that your Python code could work on the default conda environment, no extra Python packages are allowed during competition. You are allowed to use different checkpoints for left and right paddles.
 
 # Developed with love and heart by the dPickleball Technical Team
 
