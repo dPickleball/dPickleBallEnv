@@ -75,6 +75,11 @@ while ...:
 
 ```
 
+# Competition Scripts
+Examples on how to prepare the Python class TeamX are provided in the CompetitionScripts folder. These are designed to be run using CompetitionScripts/Competition.py.
+
+For teams requiring a specific conda environment (socket-based communication is implemented), please refer to CompetitionScripts/Competition_socket.py.
+
 
 # Developed with love and heart by the dPickleball Technical Team
 
