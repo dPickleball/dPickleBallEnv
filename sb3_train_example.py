@@ -34,8 +34,7 @@ channel.send_data(serve=12, p1=reward_cum[0], p2=reward_cum[1])
 
 print("Hello dPickleBall Trainer")
 
-# unity_env = UnityEnvironment("/home/gsk/Desktop/build_linux/dp.x86_64", side_channels=[string_channel, channel])
-unity_env = UnityEnvironment(None, side_channels=[string_channel, channel])
+unity_env = UnityEnvironment("/home/gsk/Desktop/build_linux/dp.x86_64", side_channels=[string_channel, channel])
 print("environment created")
 env = SharedObsUnityGymWrapper(unity_env)
 vec_env = DummyVecEnv([lambda: env])
