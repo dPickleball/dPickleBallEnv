@@ -22,10 +22,9 @@ Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdw
 4) The environment will be launched and shown. **(Ctrl + C to exit)**
 5) python sb3_train_example.py **(To train the right agent using SB3)**
 
-# Rules:
-
 ![Court](Images/Court.png)
 
+# Rules:
 1) Agents can move freely within their own half of the court. Paddles can rotate to control the ball’s rebound angle and direction, allowing for angled shots, spin, and advanced control.
 2) The objective is to hit the ball to the opponent’s side of the court. One point is awarded if the opponent fails to return the ball. The first player to reach 21 points wins the match.
 3) The winner of the previous point serves the next ball. At the beginning of the match, the right-side player serves first.
