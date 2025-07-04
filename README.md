@@ -78,7 +78,7 @@ while ...:
 # Competition Scripts
 Examples of how to prepare the Python class **TeamX** are provided in the **CompetitionScripts** folder. These are designed to be run using **CompetitionScripts/Competition.py**.
 
-For teams requiring a **specific conda environment** (sharememory is implemented for communication between Python scripts), please refer to **CompetitionScripts/Competition_sharedmemory.py and CompetitionScripts/agent_sharedmemory_right.py**.
+For teams requiring a **specific conda environment** (sharememory is implemented for communication between Python scripts), please refer to **CompetitionScripts/Competition_sharedmemory.py** and **CompetitionScripts/agent_sharedmemory_right.py**.
 
 
 # Developed with passion and dedication by the dPickleball Technical Team, with strong support from the Organizing Committee
