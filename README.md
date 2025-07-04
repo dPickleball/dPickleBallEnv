@@ -34,7 +34,7 @@ Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdw
 7) A maximum response time of 0.01 seconds is expected from the agent; if no action is received within this time window, no action will be executed for that step.
 8) Please make sure that your Python code could work on the default conda environment (dpickleball). If you need special Python packages, please refer to the next section on sharedmemory-based implementation. Your agent needs to be able to control paddles on both sides. You are allowed to use different checkpoints for left and right paddles.
 9) Your agent takes real-time visual observation of the environment as input and outputs actions. The action space consists of three discrete components, each with three possible values: (0: none, 1: up, 2: down), (0: none, 1: right, 2: left), and (0: none, 1: counter-clockwise, 2: clockwise).
-10) Your Python solution is expected to be the following form in your own Python .py file.
+10) Your Python solution is expected to be the following form in your own Python .py file. Alternatively, please refer to the next section on shared-memory-based implementation.
 ```python
 # Build a Python class for your solution, do preprocessing (image processing, frame stacking, etc) here.
 # During competition, only the policy function is called at each time step, providing the observation and reward for that time step only.
@@ -78,7 +78,7 @@ while ...:
 # Competition Scripts
 Examples of how to prepare the Python class **TeamX** are provided in the **CompetitionScripts** folder. These are designed to be run using **CompetitionScripts/Competition.py**.
 
-For teams requiring a **specific conda environment** (sharememory is implemented for communication between Python scripts), please refer to **CompetitionScripts/Competition_sharedmemory.py** and **CompetitionScripts/agent_sharedmemory_right.py**.
+For teams requiring a **specific conda environment** (shared-memory is implemented for communication between Python scripts), please refer to **CompetitionScripts/Competition_sharedmemory.py** and **CompetitionScripts/agent_sharedmemory_right.py**.
 
 
 # Developed with passion and dedication by the dPickleball Technical Team, with strong support from the Organizing Committee
