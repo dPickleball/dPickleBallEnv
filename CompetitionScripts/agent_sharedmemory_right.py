@@ -18,6 +18,10 @@ rew_array = np.ndarray(rew_shape, dtype=np.int32, buffer=shm_rew.buf)
 step_array = np.ndarray((), dtype=np.int32, buffer=shm_step.buf)
 action_array = np.ndarray(action_shape, dtype=np.int32, buffer=shm_action.buf)
 
+obs_array.flags.writeable = False
+rew_array.flags.writeable = False
+step_array.flags.writeable = False
+
 
 # load your agent check point
 #
