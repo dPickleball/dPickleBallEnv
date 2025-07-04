@@ -2,7 +2,7 @@ import numpy as np
 from collections import deque
 import cv2
 # Build a Python class for your solution, do preprocessing (image processing, frame stacking, etc) here.
-# During competition, only the policy function is called at each time step, providing the observation and reward for that time step only.
+# During the competition, only the policy function is called at each time step, providing the observation and reward for that time step only.
 # Your agent is expected to return actions to be executed.
 class TeamX:
     # Define square directions
@@ -17,7 +17,9 @@ class TeamX:
 
     def __init__(self, frame_stack=1):
         self.frames = deque(maxlen=frame_stack)
-        
+
+        # Load your checkpoint for policy network
+        # model.load()
     
     # Your policy takes only visual representation as input, 
     # and reward is 1 when you score, -1 when your opponent scores
@@ -33,6 +35,9 @@ class TeamX:
 
         stacked_obs = np.concatenate(list(self.frames), axis=0)  # (stack, H, W)
 
+        # Use your policy network here
+        # model.predict()
+        
         # square motion (you can replace with your own agent here)
         side = (self.step // self.steps_per_side) % 4
         action = self.square_directions[side]
