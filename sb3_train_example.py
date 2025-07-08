@@ -14,7 +14,7 @@ from stable_baselines3.common.torch_layers import NatureCNN
 from stable_baselines3.common.policies import ActorCriticPolicy
 
 from mylib import SharedObsUnityGymWrapper, CustomCNN
-
+import time
 
 string_channel = StringSideChannel()
 channel = CustomDataChannel()
