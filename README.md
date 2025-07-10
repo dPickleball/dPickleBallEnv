@@ -4,7 +4,7 @@
 
 # Installation Steps to Set Up dPickleball Environment:
 
-1) conda create -n dpickleball python=3.10.12
+1) conda create -n dpickleball pip python=3.10.12
 2) conda activate dpickleball
 3) git clone https://github.com/dPickleball/dpickleball-ml-agents.git
 4) cd dpickleball-ml-agents
