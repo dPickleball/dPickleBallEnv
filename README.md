@@ -13,7 +13,7 @@
 7) pip install matplotlib
 8) pip install opencv-python==4.7.0.72
 9) pip install numpy==1.23.5
-10) pip install ray[rllib]==2.7.0
+10) pip install ray[rllib]==2.5.0
 11) Download this repo, modify the path in test_paral.py
 
 # Usage:
