@@ -12,7 +12,8 @@
 6) pip install -e ./ml-agents
 7) pip install matplotlib
 8) pip install opencv-python==4.7.0.72
-9) Download this repo, modify the path in test_paral.py
+9) pip install numpy==1.23.5
+10) Download this repo, modify the path in test_paral.py
 
 # Usage:
 Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdwzjgP88rJtZO4qPkyfAGSS7e?usp=sharing](https://drive.google.com/drive/folders/1LiFp2MJdwzjgP88rJtZO4qPkyfAGSS7e?usp=sharing)
