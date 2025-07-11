@@ -11,7 +11,7 @@
 5) pip install -e ./ml-agents-envs
 6) pip install -e ./ml-agents
 7) pip install matplotlib
-8) pip install opencv-python
+8) pip install opencv-python==4.7.0.72
 9) Download this repo, modify the path in test_paral.py
 
 # Usage:
