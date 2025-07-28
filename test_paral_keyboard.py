@@ -107,7 +107,6 @@ try:
         
         # print(f"Step {step}: action = {action}")
 
-        step += 1
 
 
 
