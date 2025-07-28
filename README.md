@@ -12,7 +12,7 @@
 6) pip install -e ./ml-agents
 7) pip install matplotlib
 8) pip install opencv-python==4.7.0.72
-9) pip install ray[rllib]==2.5.0
+9) pip install pynput-1.8.1
 10) pip install numpy==1.23.5
 11) Download this repo, modify the path in test_paral.py
 
@@ -21,8 +21,10 @@ Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdw
 1) Download the build from the URL above (Please use **V2**)
 2) conda activate dpickleball
 3) python test_paral.py    **(remember to change path and point to the build)**
-4) The environment will be launched and shown. **(Ctrl + C to exit)**
-5) python sb3_train_example.py **(To train the right agent using SB3)**
+4) python test_paral_keyboard.py    **(for keyboard control, remember to change path and point to the build)**
+5) The environment will be launched and shown. **(Ctrl + C to exit)**
+6) python sb3_train_example.py **(To train the right agent using SB3)**
+7) for rilib example install, ray[rllib]==2.5.0
 
 ![Court](Images/Court.png)
 
