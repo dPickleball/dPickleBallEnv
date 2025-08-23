@@ -85,7 +85,7 @@ try:
     while env.agents:
 
         #observation available from agent0 only
-        observation = observation['PAgent1?team=0?agent_id=0']['observation'][0]
+        observation = observation[env.agents[0]]['observation'][0]
 
         # Left : Use fallback action
         with action_x_lock:
@@ -104,14 +104,14 @@ try:
         action_right = fallback_y
 
         
-        actions = {'PAgent1?team=0?agent_id=0':action_left,'PAgent2?team=0?agent_id=1':action_right}
+        actions = {env.agents[0]:action_left,env.agents[1]:action_right}
 
         observation, reward, done, info = env.step(actions)
 
-        reward_cum[0] += reward['PAgent1?team=0?agent_id=0']
-        reward_cum[1] += reward['PAgent2?team=0?agent_id=1']
+        reward_cum[0] += reward[env.agents[0]]
+        reward_cum[1] += reward[env.agents[1]]
 
-        if reward['PAgent1?team=0?agent_id=0'] + reward['PAgent2?team=0?agent_id=1']>0:
+        if reward[env.agents[0]] + reward[env.agents[1]]>0:
             print("reward:", reward_cum)
 
         step += 1

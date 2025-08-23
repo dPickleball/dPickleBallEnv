@@ -78,21 +78,21 @@ try:
         if 'u' in key_states:
             action_right[2] = 2
 
-        actions = {'PAgent1?team=0?agent_id=0':action_left,'PAgent2?team=0?agent_id=1':action_right}
+        actions = {env.agents[0]:action_left,env.agents[1]:action_right}
 
         observation, reward, done, info = env.step(actions)
 
         # print(observation, reward, done, info)
 
-        reward_cum[0] += reward['PAgent1?team=0?agent_id=0']
-        reward_cum[1] += reward['PAgent2?team=0?agent_id=1']
+        reward_cum[0] += reward[env.agents[0]]
+        reward_cum[1] += reward[env.agents[1]]
 
         # print("reward:", reward_cum, done)
 
-        if done['PAgent1?team=0?agent_id=0'] or done['PAgent2?team=0?agent_id=1']:
+        if done[env.agents[0]] or done[env.agents[1]]:
             sys.exit()
 
-        obs = observation['PAgent1?team=0?agent_id=0']['observation'][0]
+        obs = observation[env.agents[0]]['observation'][0]
 
         #print(obs.shape)
         

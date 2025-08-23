@@ -88,8 +88,8 @@ class SharedObsWrapper(MultiAgentEnv):
     def __init__(self, config, worker_id=0):
         super().__init__()
         agent_map = {
-                "left": "PAgent1?team=0?agent_id=0",
-                "right": "PAgent2?team=0?agent_id=1"
+                "left": env.agents[0],
+                "right": env.agents[1]
             }
 
         unity_env = UnityEnvironment(

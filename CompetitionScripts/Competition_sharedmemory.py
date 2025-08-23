@@ -68,7 +68,7 @@ try:
     while env.agents:
 
         #observation available from agent0 only
-        observation = observation['PAgent1?team=0?agent_id=0']['observation'][0]
+        observation = observation[env.agents[0]]['observation'][0]
         img = np.transpose(observation, (1, 2, 0))  # now shape is (84, 168, 3)
         # # Convert to uint8 
         img_uint8 = (img * 255).astype(np.uint8)
@@ -83,14 +83,14 @@ try:
         act_right = action_array.copy()
         # print(f"[Sender] Action received: {act_right}")
 
-        actions = {'PAgent1?team=0?agent_id=0':teamX.policy(observation, reward_left),'PAgent2?team=0?agent_id=1':act_right}
+        actions = {env.agents[0]:teamX.policy(observation, reward_left),env.agents[1]:act_right}
 
         observation, reward, done, info = env.step(actions)
 
-        reward_cum[0] += int(reward['PAgent1?team=0?agent_id=0'])
-        reward_cum[1] += int(reward['PAgent2?team=0?agent_id=1'])
+        reward_cum[0] += int(reward[env.agents[0]])
+        reward_cum[1] += int(reward[env.agents[1]])
 
-        if reward['PAgent1?team=0?agent_id=0'] + reward['PAgent2?team=0?agent_id=1']>0:
+        if reward[env.agents[0]] + reward[env.agents[1]]>0:
             print("reward:", reward_cum)
 
         step += 1
