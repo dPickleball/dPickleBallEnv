@@ -18,7 +18,7 @@
 
 # Usage:
 Build for Windows/MacOS/Linux [https://drive.google.com/drive/folders/1LiFp2MJdwzjgP88rJtZO4qPkyfAGSS7e?usp=sharing](https://drive.google.com/drive/folders/1LiFp2MJdwzjgP88rJtZO4qPkyfAGSS7e?usp=sharing)
-1) Download the build from the URL above (Please use **V2**)
+1) Download the build from the URL above 
 2) conda activate dpickleball
 3) python test_paral.py    **(remember to change path and point to the build)**
 4) python test_paral_keyboard.py    **(for keyboard control, remember to change path and point to the build)**
