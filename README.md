@@ -17,7 +17,7 @@
 11) Download this repo, modify the path in test_paral.py
 
 # Usage:
-Build URL: (https://drive.google.com/drive/folders/1LiFp2MJdwzjgP88rJtZO4qPkyfAGSS7e?usp=sharing)(https://drive.google.com/drive/u/0/folders/1lFqj6lopoIO96C_IO8yGXGzRMY1S4fzi)
+Build URL: https://drive.google.com/drive/u/0/folders/1lFqj6lopoIO96C_IO8yGXGzRMY1S4fzi
 1) Download the build from the URL above 
 2) conda activate dpickleball
 3) python test_paral.py    **(remember to change path and point to the build)**
