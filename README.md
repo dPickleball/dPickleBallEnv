@@ -87,4 +87,3 @@ For teams requiring a **specific conda environment** (shared-memory is implement
 
 # Developed with passion and dedication by the dPickleball Technical Team, with strong support from the Organizing Committee
 
-![poster](Images/poster.png)
