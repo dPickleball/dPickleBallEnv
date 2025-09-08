@@ -35,7 +35,9 @@ channel.send_data(serve=212, p1=reward_cum[0], p2=reward_cum[1])
 
 print("Hello dPickleBall Trainer")
 
-unity_env = UnityEnvironment(r"C:\Users\User\Desktop\build_windows_V4\dp.exe", side_channels=[string_channel, channel])
+# unity_env = UnityEnvironment(r"C:\Users\User\Desktop\build_windows_V4\dp.exe", side_channels=[string_channel, channel])
+unity_env = UnityEnvironment(None, side_channels=[string_channel, channel])
+
 print("environment created")
 env = UnityParallelEnv(unity_env)
 print("petting zoo setup")
