@@ -23,8 +23,6 @@ Build URL: https://drive.google.com/drive/u/0/folders/1lFqj6lopoIO96C_IO8yGXGzRM
 3) python test_paral.py    **(remember to change path and point to the build)**
 4) python test_paral_keyboard.py    **(for keyboard control, remember to change path and point to the build)**
 5) The environment will be launched and shown. **(Ctrl + C to exit)**
-6) python sb3_train_example.py **(To train the right agent using SB3)**
-7) for rilib example install, ray[rllib]==2.5.0
 
 ![Court](Images/Court.png)
 
@@ -79,10 +77,5 @@ while ...:
 ```
 
 # Competition Scripts
-Examples of how to prepare the Python class **TeamX** are provided in the **CompetitionScripts** folder. These are designed to be run using **CompetitionScripts/Competition.py**.
-
-For teams requiring a **specific conda environment** (shared-memory is implemented for communication between Python scripts), please refer to **CompetitionScripts/Competition_sharedmemory.py** and **CompetitionScripts/agent_sharedmemory_right.py**.
-
-
-# Developed with passion and dedication by the dPickleball Technical Team, with strong support from the Organizing Committee
+Please refer the Example1 and Example2
 
