@@ -77,5 +77,5 @@ while ...:
 ```
 
 # Competition Scripts
-Please refer the Example1 and Example2
+
 
