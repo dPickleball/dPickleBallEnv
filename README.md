@@ -78,8 +78,8 @@ while ...:
 
 # Important Notes
 
-1) You can use any package (such as Tensorflow, Pytorch, and so on) in any deep learning method or introduce deep learning methods in your agent during the training phase, but convert your agent's checkpoint into a pytorch format model during inference.
+1) You can use any package (such as Tensorflow, Pytorch, and so on) in any deep learning method or introduce deep learning methods in your agent during the training phase, but convert your agent's checkpoint into a pytorch format model during inference phase.
 2) You must to train the left side agent and right side agent.
-3) In the competition day, we will use the Linux system for competition.
+3) For the AIT306, we will use the Linux system in the competition day.
 
 
